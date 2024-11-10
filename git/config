@@ -1,0 +1,28 @@
+[user]
+  name = callum
+  email = callumjamesteesdale@gmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAzMUhK5XCP7PwKfJAYlmyPGYKrffz4gw0kwlEbyHxUM
+
+[init]
+  defaultBranch = main
+
+[push]
+  autoSetupRemote = true
+
+[pull]
+  rebase = true
+
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[commit]
+  gpgsign = true
